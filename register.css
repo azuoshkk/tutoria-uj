@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Figtree', sans-serif;
+  background-color: #f8f8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background-color 0.4s ease;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 40px;
+  border: 3px solid blue;
+  border-radius: 25px;
+  transition: border-color 0.4s ease, background-color 0.4s ease;
+}
+
+h2 {
+  color: blue;
+  font-size: 1.8em;
+  transition: color 0.4s ease;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+input {
+  border: 1px solid blue;
+  border-radius: 25px;
+  height: 2.5vh;
+  width: 15vw;
+  text-align: center;
+  background-color: none;
+  transition: 
+    background-color 0.4s ease,
+    color 0.4s ease,
+    transform 0.3s ease,
+    border-color 0.4s ease;
+}
+
+input:hover {
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
+::placeholder {
+  text-align: center;
+}
+
+button {
+  height: 3vh;
+  width: 5vw;
+  background: none;
+  border: 2px solid blue;
+  border-radius: 10px;
+  color: blue;
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease,
+    transform 0.3s ease,
+    border-color 0.4s ease;
+}
+
+button:hover {
+  background-color: blue;
+  color: white;
+  transform: scale(1.05);
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+  padding: 3px 10px;
+  border-radius: 10px;
+  transition: 
+    background-color 0.4s ease,
+    color 0.4s ease;
+}
+
+a:hover {
+  background-color: blue;
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1vh;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #000;
+}
+
+body.dark-mode h2 {
+  color: #f8f8ff;
+}
+
+body.dark-mode .register {
+  border-color: blue;
+}
+
+body.dark-mode input,
+body.dark-mode button,
+body.dark-mode a {
+  color: #f8f8ff;
+  border-color: blue;
+  background-color: black;
+  /* background-color: #222; */
+}
+
+body.dark-mode input:hover,
+body.dark-mode button:hover {
+  background-color: rgba(0, 0, 255, 0.1);
+  color: #f8f8ff;
+}
+
+body.dark-mode a:hover {
+  background-color: blue;
+  color: #000;
+}

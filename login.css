@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #f8f8ff;
+    font-family: figtree;
+    height: 100%;
+    margin: 0;
+}
+
+.login{
+    margin-top: 25vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    /* background-color: blue; */
+    border-radius: 25px;
+    gap: 25px;
+    border: 3px solid blue;
+    font-size: 1em;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+::placeholder{
+    text-align: center;
+    /* font-size: 1e; */
+}
+
+input{
+    border: 1px solid blue;
+    border-radius: 25px;
+    height: 2.5vh;
+    width: 15vw;
+    text-align: center;
+    /* background: none; */
+}
+
+h2{
+    color: blue;
+}
+
+button{
+    height: 3vh;
+    width: 5vw;
+    background: #f8f8ff;
+    border: 2px solid blue;
+    border-radius: 10px;
+    color: blue
+}
+
+button:hover{
+    background-color: blue;
+    transform: scale(1.);
+    color: #f8f8ff;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    border: 0;
+    padding: 3px 10px;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #ffff;
+    border: 0;
+    background-color: blue;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+
+.forms{
+    gap: 10px;
+}
+
+.buttons{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    margin-top: 1vh;
+}
+
+#email{
+    background-image: url(/static/img/mail\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position: 1em;
+    background-size: 1.3em;
+}
+
+#password{
+    background-image: url(/static/img/semester\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position: 1em;
+    background-size: 1.3em;
+}
+/* Efeito de fade para inputs, botão de login e botão de darkmode */
+input, button {
+    transition: background-color 0.4s ease, color 0.4s ease, transform 0.3s ease;
+}
+
+input:hover{
+    background-color: rgba(0, 0, 255, 0.1);
+}
+
+/* Tema escuro */
+body.dark-mode {
+    background-color: #000;
+}
+
+body.dark-mode h2,
+body.dark-mode p,
+body.dark-mode input,
+body.dark-mode button {
+    color: #f8f8ff;
+    border-color: blue;
+}
+
+body.dark-mode a{
+    color: blue;
+}
+
+body.dark-mode input,
+body.dark-mode button {
+    background-color: #222;
+}
+
+body.dark-mode a:hover,
+body.dark-mode button:hover {
+    background-color: blue;
+    color: #000;
+}
+
+body.dark-mode input:hover{
+    background-color: rgba(0, 0, 255, 0.1);
+}
+
+body.dark-mode button:hover{
+    background-color: blue;
+}
